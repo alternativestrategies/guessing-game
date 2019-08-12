@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400&display=swap');
+
+$video-game-font: 'Press Start 2P', cursive;
+$lato: 'Lato', sans-serif;
+
+$primary-color: #B3446C;
+$dark-primary: darken($primary-color, 8%); 
+$light-primary: lighten($primary-color, 45%);
+
+@mixin text {
+    color: $primary-color; 
+    font-family: $lato;
+    font-size: 1.15em;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    @include text;
+    h1 {
+        font-size: 56px;
+        margin-bottom: 0px; 
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-family: $video-game-font;
+    }
+    p {
+        margin-top: 5px;
+        letter-spacing: .8px;
+    }
+    .blink {
+        animation: blink 1s step-start 0s infinite;
+        
+    }
+}
+
+.main-btns{
+    margin: auto;
+    width: 40%;
+    button{
+        background-color: $primary-color;
+        color: $light-primary;
+        font-size: 20px;
+        width: 50%;
+        height: 75px;
+        padding: 10px;
+        border-radius: .25rem;
+        &:hover {
+            background-color: rgba($primary-color, 0.9);
+        }
+        &:disabled {
+            background-color: rgba($primary-color, 0.2);
+            cursor: not-allowed;
+        }
+    }
+}
+
+.center {
+    margin: 0 auto;
+    width: 80%;
+    height: 150px;;
+}
+
+.counter {
+    overflow: hidden;
+    background-color: $primary-color;
+    color: $light-primary;
+    display: inline-block;
+    padding: 12px;
+    font-family: arial;
+    width: 18%;
+    height: 150px;
+    border-radius: 5%;
+    text-align: center;
+    p {
+        margin-top: 14px;
+        margin-bottom: 0;
+    }
+    &-headline {
+        font-weight: 900;
+        font-size: 26px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+    &-score {
+        font-size: 26px;
+        font-weight: 600;
+    }
+}
+
+.display { 
+    width: 58%;
+    margin: 0 8px 20px;
+    text-align: center;
+    display: inline-block;
+    letter-spacing: .9px;
+    @include text;
+    font-family: arial;
+    color: $dark-primary;
+    &-rules {
+        padding-bottom: 10px;
+        &-headline {
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-weight: 900;
+        }
+    }
+    &-message {
+        margin-bottom: 20px;
+        font-size: 17px;
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+}
+
+
+  form {
+    margin: 75px auto 10px;
+    width: 40%;
+    background-color: $primary-color;
+    border-radius: 5px;
+    input[type=text] {
+        width: 45%;
+        flex-grow: 1;
+        border-width: 0 0 1px 0;
+        margin: 15px 10px 15px 15px;
+        padding: 5px 10px 5px 10px;
+        border-radius: 5px;
+        background-color: $dark-primary;
+        border-style: none;
+        text-shadow: none;
+        text-transform: uppercase;
+        color: $light-primary;
+        letter-spacing: 2px;
+        outline: none;
+        font-size: 20px;
+    }
+    button {
+        background-color: $dark-primary;
+        width: 22%;
+        height: 40px;
+        color: $light-primary;
+        font-size: 15px;
+        border: none;
+        border-radius: 5px; 
+        margin: 0 2px;
+        &:hover {
+            background-color: $light-primary;
+            color: $dark-primary;
+        }
+    }
+  }
+  
+  input[type=text]::-webkit-input-placeholder{
+    color: $light-primary;
+    letter-spacing: 2px;
+    font-size: 20px;
+  } 
+
+.reset {
+    margin: 15px auto;
+    width: 15%;
+    button {
+        width: 100%;
+        font-size: 18px;
+        height: 50px;
+        background-color: #fff;
+        color: $dark-primary;
+        border-radius: 5px;
+        border: 1px solid $primary-color;
+        &:hover {
+            color: $light-primary;
+            background-color: $dark-primary;
+        }
+    }
+}
+
+
+@keyframes blink {
+    50% {
+      opacity: 0.0;
+    }
+  }
+
+.not-here{
+    visibility: hidden;
+}
+
+.here {
+    visibility: visible;
+}
