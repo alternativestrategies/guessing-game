@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/guessing-game/static/css/main.fce9bc68.chunk.css",
+    "main.js": "/guessing-game/static/js/main.a35b6bda.chunk.js",
+    "main.js.map": "/guessing-game/static/js/main.a35b6bda.chunk.js.map",
+    "runtime~main.js": "/guessing-game/static/js/runtime~main.4e9801d6.js",
+    "runtime~main.js.map": "/guessing-game/static/js/runtime~main.4e9801d6.js.map",
+    "static/js/2.006d76b9.chunk.js": "/guessing-game/static/js/2.006d76b9.chunk.js",
+    "static/js/2.006d76b9.chunk.js.map": "/guessing-game/static/js/2.006d76b9.chunk.js.map",
+    "index.html": "/guessing-game/index.html",
+    "precache-manifest.d6a4a071a26d4f0b3d45bf28e56418e1.js": "/guessing-game/precache-manifest.d6a4a071a26d4f0b3d45bf28e56418e1.js",
+    "service-worker.js": "/guessing-game/service-worker.js",
+    "static/css/main.fce9bc68.chunk.css.map": "/guessing-game/static/css/main.fce9bc68.chunk.css.map"
+  }
+}
