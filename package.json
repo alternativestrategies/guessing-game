@@ -4,9 +4,10 @@
   "private": true,
   "homepage": "http://alternativestrategies.github.io/guessing-game",
   "dependencies": {
+    "eslint-utils": "^1.4.2",
     "gh-pages": "^2.1.1",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
     "react-scripts": "3.1.0"
   },
   "scripts": {
