@@ -1,15 +1,13 @@
-import React, {Component} from 'react';
+import React from 'react';
 
-class Form extends Component {
-    
-    render (){
+const Form = (props) => {
         return (
             <React.Fragment>
-            <form onSubmit={this.props.submitGuess}>
+            <form onSubmit={props.submitGuess}>
                 <input 
                 type="text"
-                onChange={this.props.getUserGuess}
-                value = {this.props.userGuess}
+                onChange={props.getUserGuess}
+                value = {props.userGuess}
                 placeholder="Guess"/>
 
                 <button
@@ -19,7 +17,7 @@ class Form extends Component {
     
                 <button
                 
-                onClick={this.props.newGame}>
+                onClick={props.newGame}>
                 New Game
                 </button>
                 
@@ -28,13 +26,13 @@ class Form extends Component {
             <div className="reset">
             <button 
             type="reset"
-            onClick={this.props.resetChoice}>
+            onClick={props.resetChoice}>
             Reset Game Mode
             </button>
             </div>
             </React.Fragment>
         );
-    }
+    
 }
 
 export default Form; 

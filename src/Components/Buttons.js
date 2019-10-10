@@ -4,12 +4,12 @@ const Buttons = (props) => {
     return (
     <div className="main-btns">
          <button 
-        onClick={props.standardGame}
+        onClick={(e) => props.handleGameChoice('Standard', e)}
         disabled={props.gameChoice === "Standard" || props.gameChoice === '' ? false : true}>
           Standard
         </button>
         <button
-        onClick={props.expertGame}
+        onClick={(e) => props.handleGameChoice('Expert', e)}
         disabled={props.gameChoice === "Expert" || props.gameChoice === ''? false : true}>
           Expert
         </button>
